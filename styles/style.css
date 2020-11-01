@@ -8,7 +8,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 32px;
+  font-size: 16px;
 }
 
 body {
@@ -24,23 +24,27 @@ body {
 }
 
 .ft-sm {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .ft-red {
   color: red;
 }
 
+.bg-blue {
+  background-color: rgba(65, 105, 244, 0.5) !important;
+}
+
+.bg-green {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
 .mb-sm {
-  margin-bottom: 16px !important;
+  margin-bottom: 10px !important;
 }
 
 .mb-lg {
-  margin-bottom: 80px !important;
-}
-
-.mb-lgg {
-  margin-bottom: 200px !important;
+  margin-bottom: 20px !important;
 }
 
 .pb-sm {
@@ -66,13 +70,13 @@ body {
 }
 
 .main-container {
-  width: 1200px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .hd-ft-container {
-  width: 1200px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -80,55 +84,52 @@ body {
 .header {
   height: 400px;
   width: 100%;
-  max-width: 1200px;
-  background-image: url("../img/0000_hd-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-color: #90c3ea;
   position: relative;
 }
 
 .header .hd-mask {
   height: 100%;
+  background-image: url("../img/0000_hd-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: -10% 90%;
   position: relative;
 }
 
 .header .hd-mask .hd-title {
   margin: 0;
-  font-size: 72px;
+  font-size: 38px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
   color: white;
   position: absolute;
   top: 20px;
-  right: 50px;
-  /* position: absolute;
-      top: 10%;
-      left: 5%; */
+  right: 10px;
 }
 
 .header .hd-mask .hd-copy {
   margin: 0;
   padding-top: 10px;
-  font-size: 32px;
+  font-size: 18px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
   text-align: center;
   color: white;
   letter-spacing: 5px;
   position: absolute;
-  top: 80%;
-  right: 8%;
+  top: 45%;
+  right: 2%;
 }
 
 .header .hd-mask .hd-logo {
-  width: 500px;
+  width: 300px;
   padding: 1px 0;
   background-color: white;
   border-radius: 20px;
   position: absolute;
-  top: 60%;
-  right: 4%;
+  top: 35%;
+  right: 1%;
   z-index: 1;
 }
 
@@ -140,16 +141,16 @@ body {
           margin-block-end: 5px;
   text-align: center;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 18px;
+  font-size: 11px;
 }
 
 .target-bg {
-  padding: 20px;
+  width: 100%;
 }
 
 .target-bg .target-box {
   width: 80%;
-  padding: 30px;
+  padding: 10px;
   margin: 0 auto;
   background-color: white;
   border-radius: 30px;
@@ -160,15 +161,16 @@ body {
   width: 100%;
 }
 
+.banner-box .banner-title {
+  font-size: 1rem;
+  padding: 0 5px;
+  margin: 0;
+}
+
 .banner-box .banner {
   width: 100%;
   display: block;
   margin: 0 auto;
-}
-
-.message-box {
-  margin: 0 auto;
-  padding: 30px;
 }
 
 .shop-menu-box {
@@ -176,12 +178,14 @@ body {
 }
 
 .shop-menu-box .title {
-  width: 80%;
+  width: 90%;
+  font-size: 1rem;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .shop-menu-box .shop-menu {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -194,16 +198,16 @@ body {
 
 .shop-menu-box .shop-menu .shop-menu-title {
   width: 100%;
+  padding: 10px 0;
   background-color: royalblue;
   color: white;
-  padding: 20px;
 }
 
 .shop-menu-box .shop-menu .visit-menu-title {
   width: 100%;
+  padding: 10px 0;
   background-color: green;
   color: white;
-  padding: 20px;
 }
 
 .shop-menu-box .shop-menu .tbl-r04 {
@@ -231,7 +235,7 @@ body {
   font-weight: bold;
   padding: 10px;
   position: absolute;
-  top: -80px;
+  top: -60px;
   left: -0.2%;
   display: block;
   width: 100.5%;
@@ -279,7 +283,7 @@ body {
 
 .footer-banner .footer .ft-mask .ft-title {
   margin: 0;
-  padding-top: 150px;
+  padding-top: 100px;
   font-size: 48px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
@@ -337,51 +341,21 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
   html {
-    font-size: 16px;
-  }
-  .ft-lg {
-    font-size: 1.2rem;
-  }
-  .ft-sm {
-    font-size: 0.8rem;
-  }
-  .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    font-size: 20px;
   }
   .header .hd-mask .hd-title {
-    font-size: 32px;
+    font-size: 54px;
   }
   .header .hd-mask .hd-copy {
-    font-size: 18px;
-    position: absolute;
-    top: 80%;
-    right: 12%;
+    font-size: 24px;
+    top: 55%;
+  }
+  .header .hd-mask .hd-logo {
+    width: 380px;
+    top: 45%;
   }
   .header .hd-mask .hd-logo > p {
-    margin: 15px 0;
-    -webkit-margin-before: 1rem;
-            margin-block-start: 1rem;
-    -webkit-margin-after: 1rem;
-            margin-block-end: 1rem;
-  }
-  .title-big {
-    font-size: 72px;
-  }
-  .shop-menu-box {
-    width: 100%;
-  }
-  .shop-menu-box .shop-menu {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .shop-menu-box .shop-menu > h3 {
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
+    font-size: 14px;
   }
   .shop-menu-box .shop-menu .tbl-r04 {
     width: 100%;
@@ -414,65 +388,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .shop-menu-box .shop-menu .tbl-r04 td:first-child {
     margin-top: 0;
   }
-  .footer-banner {
-    text-decoration: none;
-  }
-  .footer-banner .footer {
-    height: 400px;
-    width: 100%;
-    max-width: 1200px;
-    background-image: url("../img/footer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    position: relative;
-  }
-  .footer-banner .footer .ft-mask {
-    height: 100%;
-    background-color: rgba(135, 238, 204, 0.5);
-    position: relative;
-  }
-  .footer-banner .footer .ft-mask .ft-title {
-    margin: 0;
-    padding-top: 200px;
-    font-size: 48px;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: block;
-    text-align: center;
-    color: white;
-    /* position: absolute;
-        top: 10%;
-        left: 5%; */
-  }
-  .footer-banner .footer .ft-mask .ft-copy {
-    margin: 0;
-    padding-top: 10px;
-    font-size: 28px;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: block;
-    text-align: center;
-    color: white;
-    letter-spacing: 5px;
-    /* position: absolute;
-        top: 30%;
-        left: 5%; */
-  }
-  .footer-banner .footer .ft-mask .ft-logo {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 1px;
-    background-color: white;
-    border-radius: 20px;
-  }
-  .footer-banner .footer .ft-mask .ft-logo > p {
-    color: black;
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
-    text-decoration: none;
-  }
 }
 
 @media (min-width: 960px) {
@@ -481,6 +396,42 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  html {
+    font-size: 32px;
+  }
+  .mb-sm {
+    margin-bottom: 16px !important;
+  }
+  .mb-lg {
+    margin-bottom: 80px !important;
+  }
+  .header .hd-mask {
+    background-size: 120%;
+    background-position: 0% 90%;
+  }
+  .header .hd-mask .hd-title {
+    font-size: 72px;
+  }
+  .header .hd-mask .hd-copy {
+    font-size: 32px;
+    top: 75%;
+  }
+  .header .hd-mask .hd-logo {
+    width: 500px;
+    top: 60%;
+  }
+  .target-bg .target-box {
+    padding: 30px;
+  }
+  .shop-menu-box .title {
+    padding: 30px;
+  }
+  .shop-menu-box .shop-menu .shop-menu-title {
+    padding: 30px 0;
+  }
+  .shop-menu-box .shop-menu .visit-menu-title {
+    padding: 30px 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -493,12 +444,9 @@ Stylesheet: 1280px以上のモニタで適用
     width: 100% !important;
     max-width: 100% !important;
   }
-  .header {
-    max-width: 100% !important;
-  }
-  .header .hd-mask .hd-man {
-    right: 15%;
-    bottom: 5%;
+  .header .hd-mask {
+    background-size: 80%;
+    background-position: 30% 90%;
   }
   .footer-banner .footer {
     max-width: 100% !important;

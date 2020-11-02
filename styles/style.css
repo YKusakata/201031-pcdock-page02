@@ -340,8 +340,8 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  html {
-    font-size: 20px;
+  .header .hd-mask {
+    background-size: 100%;
   }
   .header .hd-mask .hd-title {
     font-size: 54px;
@@ -397,7 +397,7 @@ Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
   html {
-    font-size: 32px;
+    font-size: 18px;
   }
   .mb-sm {
     margin-bottom: 16px !important;
@@ -406,7 +406,7 @@ Stylesheet: 960px以上のモニタで適用
     margin-bottom: 80px !important;
   }
   .header .hd-mask {
-    background-size: 120%;
+    background-size: 80%;
     background-position: 0% 90%;
   }
   .header .hd-mask .hd-title {
@@ -440,13 +440,25 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  html {
+    font-size: 20px;
+  }
   .hd-ft-container {
     width: 100% !important;
     max-width: 100% !important;
   }
   .header .hd-mask {
-    background-size: 80%;
+    background-size: 50%;
     background-position: 30% 90%;
+  }
+  .header .hd-mask .hd-title {
+    right: 10%;
+  }
+  .header .hd-mask .hd-copy {
+    right: 10%;
+  }
+  .header .hd-mask .hd-logo {
+    right: 10%;
   }
   .footer-banner .footer {
     max-width: 100% !important;

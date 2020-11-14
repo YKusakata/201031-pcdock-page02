@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  font-family: "Noto Sans JP", sans-serif;
   margin: 0;
 }
 
@@ -211,7 +212,7 @@ body {
 }
 
 .shop-menu-box .shop-menu .tbl-r04 {
-  width: 80%;
+  width: 100%;
   margin: 5% auto;
 }
 
@@ -226,32 +227,49 @@ body {
   position: relative;
 }
 
-.shop-menu-box .shop-menu .tbl-r04 td:first-child:before {
-  content: "設定内容";
+.shop-menu-box .shop-menu .tbl-r04 td:first-child {
   background: skyblue;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #fff;
   font-weight: bold;
   padding: 10px;
-  position: absolute;
-  top: -60px;
-  left: -0.2%;
-  display: block;
-  width: 100.5%;
-}
-
-.shop-menu-box .shop-menu .tbl-r04 td:first-child {
-  margin-top: 50px;
+  margin-bottom: 5%;
 }
 
 .shop-menu-box .shop-menu .tbl-r04 tr {
+  margin-bottom: 70px;
+}
+
+.shop-menu-box .shop-menu .tbl-r04-pc {
+  display: none;
+  width: 100%;
+  margin: 5% auto;
+}
+
+.shop-menu-box .shop-menu .tbl-r04-pc .thead {
+  display: none;
+}
+
+.shop-menu-box .shop-menu .tbl-r04-pc tr,
+.shop-menu-box .shop-menu .tbl-r04-pc td {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.shop-menu-box .shop-menu .tbl-r04-pc td:first-child {
+  margin-top: 50px;
+}
+
+.shop-menu-box .shop-menu .tbl-r04-pc tr {
   margin-bottom: 140px;
 }
 
 .txt {
   text-align: left;
   font-size: .75em;
+  font-weight: bold;
 }
 
 .price {
@@ -358,35 +376,39 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     font-size: 14px;
   }
   .shop-menu-box .shop-menu .tbl-r04 {
+    display: none;
+  }
+  .shop-menu-box .shop-menu .tbl-r04-pc {
+    display: block;
     width: 100%;
     margin: 0 auto;
     table-layout: fixed;
   }
-  .shop-menu-box .shop-menu .tbl-r04 .thead {
+  .shop-menu-box .shop-menu .tbl-r04-pc .thead {
     display: table-row;
   }
-  .shop-menu-box .shop-menu .tbl-r04 tr {
+  .shop-menu-box .shop-menu .tbl-r04-pc tr {
     display: table-row;
     width: initial;
     margin-bottom: 0;
   }
-  .shop-menu-box .shop-menu .tbl-r04 tr:hover {
+  .shop-menu-box .shop-menu .tbl-r04-pc tr:hover {
     background-color: #fffae9;
   }
-  .shop-menu-box .shop-menu .tbl-r04 th {
+  .shop-menu-box .shop-menu .tbl-r04-pc th {
     display: table-cell;
   }
-  .shop-menu-box .shop-menu .tbl-r04 td {
+  .shop-menu-box .shop-menu .tbl-r04-pc td {
     display: table-cell;
     width: initial;
-    padding: 20px;
+    padding: 15px;
     border-bottom: 1px solid #eee;
   }
-  .shop-menu-box .shop-menu .tbl-r04 td:first-child:before {
-    display: none;
-  }
-  .shop-menu-box .shop-menu .tbl-r04 td:first-child {
+  .shop-menu-box .shop-menu .tbl-r04-pc td:first-child {
     margin-top: 0;
+  }
+  .txt {
+    font-weight: normal;
   }
 }
 

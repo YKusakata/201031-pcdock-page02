@@ -379,7 +379,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     display: none;
   }
   .shop-menu-box .shop-menu .tbl-r04-pc {
-    display: block;
+    display: table;
     width: 100%;
     margin: 0 auto;
     table-layout: fixed;

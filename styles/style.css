@@ -375,6 +375,9 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .header .hd-mask .hd-logo > p {
     font-size: 14px;
   }
+  .shop-menu-box .title {
+    font-size: revert;
+  }
   .shop-menu-box .shop-menu .tbl-r04 {
     display: none;
   }
